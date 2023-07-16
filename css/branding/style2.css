@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eaeaea;
+  color: rgb(32, 32, 32);
+  font-family: "Dosis", sans-serif;
+}
+body ul li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body .container {
+  padding: 3% 10%;
+  align-items: center;
+}
+
+header {
+  position: relative;
+  background: #ef3f42;
+  width: 100%;
+  padding: 0px 10%;
+  position: fixed;
+}
+header .nav-bar {
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-bar .logo img {
+  width: 55px;
+}
+header .nav-bar .navigation ul {
+  display: flex;
+  gap: 2rem;
+}
+header .nav-bar .navigation ul li a {
+  color: #eaeaea;
+  font-weight: 500;
+}
+header .nav-bar .navigation ul li a:hover {
+  color: rgb(32, 32, 32);
+}
+header .nav-bar .navigation ul li a.active {
+  color: rgb(32, 32, 32);
+}
+header .nav-bar .tgl-btn {
+  color: #eaeaea;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.tgl-menu {
+  position: absolute;
+  display: none;
+  right: 2rem;
+  top: 50px;
+  width: 300px;
+  height: 0px;
+  background: rgba(239, 63, 66, 0.6);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tgl-menu ul li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tgl-menu ul li a {
+  color: #eaeaea;
+  font-weight: 500;
+}
+.tgl-menu ul li a:hover {
+  color: rgb(32, 32, 32);
+}
+
+.tgl-menu.open {
+  height: 40vh;
+}
+
+.branding .tittle h2 {
+  color: #ef3f42;
+  font-weight: 400;
+  margin: 40px 0px 25px;
+}
+.branding .brand-gallery .row {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.branding .brand-gallery .row img {
+  width: 350px;
+  margin: 0px auto;
+}
+.branding .soon {
+  text-align: center;
+  margin: 70px auto;
+}
+.branding .soon h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+hr {
+  outline: 0;
+  height: 5px;
+  max-width: 80vw;
+  margin: 1rem auto;
+  background-color: #ef3f42;
+}
+
+.corporate .tittle h2 {
+  color: #ef3f42;
+  font-weight: 400;
+  margin: 10px 0px 25px;
+}
+.corporate .brand-gallery .row {
+  display: flex;
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.corporate .brand-gallery .row img {
+  width: 350px;
+  margin: 0px space-between;
+}
+.corporate .soon {
+  text-align: center;
+  margin: 70px auto;
+}
+.corporate .soon h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.footer .container .social {
+  display: flex;
+  justify-content: center;
+}
+.footer .container .social i {
+  margin: 5px;
+}
+.footer .container .rights {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.footer .container .rights img {
+  width: 40px;
+}
+.footer .container .rights p {
+  padding: 5px;
+  color: #a9a9a9;
+}
+
+@media (max-width: 992px) {
+  * {
+    justify-content: center;
+  }
+  header .nav-bar {
+    height: 50px;
+  }
+  header .nav-bar .navigation {
+    display: none;
+  }
+  header .nav-bar .tgl-btn {
+    display: block;
+  }
+  .container {
+    padding: 25px 10px;
+  }
+  .tgl-menu {
+    display: block;
+  }
+  hr {
+    width: 300px;
+  }
+  .branding .container .tittle h2 {
+    margin-top: 60px;
+  }
+  .branding .container .brand-gallery .row img {
+    width: 80%;
+  }
+  .branding .container .soon h1 {
+    font-size: 1.5rem;
+  }
+  .corporate .container .tittle h2 {
+    margin-top: 60px;
+  }
+  .corporate .container .brand-gallery .row {
+    justify-content: center;
+  }
+  .corporate .container .brand-gallery .row img {
+    width: 80%;
+  }
+  .corporate .container .soon h1 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style2.css.map */
